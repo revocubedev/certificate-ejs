@@ -6,51 +6,155 @@
     <title>Classcube Certificate</title>
     <style>
         body {
-          background-color: linen;
+          text-align: center;
+        }
+        *{
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;           
+        }
+
+        #certificatewrapper {
+            background-color: linen;
+            margin: 0 10%;
+
+        }
+
+        #heading {
+            text-align: center;            
         }
 
         #certificate {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 20rem;
+            font-size: 5rem;
+            margin: 0px;            
         }
+
+        #completion {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            margin: 0px;
+            padding-bottom: 50px;            
+
+        }
+
+        #present {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 1rem; 
+            color: #5c5b5b;
+            padding-bottom: 5rem;          
+        }
+
+        #achievement {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 1rem; 
+            color: #5c5b5b;
+            padding-bottom: 1px; 
+        }
+
+        #course {
+            padding-top: 3rem;          
+        }
+
+        #studentName {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+            margin-left: 25%;
+            margin-right: 25%;
+            border-bottom: solid 1px;
+        }
+
+        #courseName {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            padding-bottom: 6rem;
+        }
+
+        #seal {
+            width: 8rem;
+            padding-bottom: 3rem;
+        }
+
+        #dateAndSignature {
+            display: flex;
+            justify-content: center;
+            gap: 25%;
+        }
+
+        #dated, #signed {
+            color: #5c5b5b;
+            font-size: 1.2rem;
+        }
+
+        #dateWrapper, #signatureWrapper {
+            border-bottom: solid 1px;
+            padding: 0px 3rem;
+        }
+
+        #signature, #date {
+            font-size: 1.2rem;
+        }
+
+        #logoWrapper {
+            padding: 3rem 0rem 1rem 0rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo {
+            width: 7%;
+            object-fit: contain;
+        }
+
     </style>
 </head>
 <body>
-    <div id="heading">
-        <p id="certificate">CERTIFICATE</p>
-        <p id="completetion">OF COMPLETION</p>
-    </div>
-
-    <div id="presentedTo">
-        <p id="present">This certificate is presented to</p>        
-    </div>
-
-    <div id="receipient">
-        <p id="studentName">John Doe</p>
-        <p id="achievement">For participating in and completing the the course</p>
-        <p id="course">name of course goes here</p>
-    </div>
-
-    <div>
-        <img id="seal" src="images/seal.jpg" alt="seal">
-    </div>
-
-    <div id="dateAndSignature">
-        <div class="signNdate">
-            <p id="dated">date goes here</p>
-            <p id="date">Date</p>
+    <div id="certificatewrapper">
+        <div id="heading">
+            <p id="certificate">CERTIFICATE</p>
+            <p id="completion">OF COMPLETION</p>
         </div>
-        <div class="signNdate">
-            <p id="signed">Signature goes here</p>
-            <p id="signature">Signature</p>
-        </div>
-    </div>
-
-    <div id="logo">
-        <img class="logo" alt="tutorLogo">
-        <img class="logo" src="images/classcubeLogo.png" alt="classcubeLogo">
-    </div>
     
+        <div id="presentedTo">
+            <p id="present">This certificate is presented to</p>        
+        </div>
+    
+        <div id="studentName">
+            <p>John Doe</p>
+        </div>
 
+        <div id="course">
+            <p id="achievement">For participating in and completing the the course</p>
+            <p id="courseName">name of course goes here</p>
+        </div>
+    
+        <div>
+            <img id="seal" src="images/seal-removebg-preview.png" alt="seal">
+        </div>
+    
+        <div id="dateAndSignature">
+            <div class="signNdate">
+                <div id="dateWrapper">
+                    <p id="dated">1/1/1990</p>
+                </div>
+                <p id="date">Date</p>
+            </div>
+            <div class="signNdate">
+                <div id="signatureWrapper">
+                    <p id="signed">Signature goes here</p>
+                </div>
+                <p id="signature">Signature</p>
+            </div>
+        </div>
+
+        <div id="logoWrapper">
+            <img class="logo" alt="tutorLogo">
+            <img class="logo" src="images/classcubeLogo.png" alt="classcubeLogo">
+        </div> 
+    
+    </div>
+       
+    
 </body>
 </html>
